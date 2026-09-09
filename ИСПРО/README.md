@@ -15,16 +15,10 @@
 
 ```mermaid
 graph TD
-    ISPRO["Инструменты разработки ПО"] --> Git["1. Системы контроля версий (Git)<br/>ветвление, слияние, rebase, cherry-pick"]
-    ISPRO --> Build["2. Системы сборки и автоматизации<br/>Make, CMake, скрипты сборки"]
-    ISPRO --> Env["3. Среда разработки и CLI<br/>Bash, Linux CLI, SSH, утилиты GNU"]
-    ISPRO --> CI["4. CI/CD и контейнеризация<br/>GitHub Actions, Docker, тестирование"]
-
-    style ISPRO fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
-    style Git fill:#fbe9e7,stroke:#ff5722
-    style Build fill:#fff3e0,stroke:#ff9800
-    style Env fill:#e8f5e9,stroke:#4caf50
-    style CI fill:#f3e5f5,stroke:#9c27b0
+    ISPRO["Инструменты разработки ПО"] --> Git["1. Системы контроля версий: Git"]
+    ISPRO --> Build["2. Системы сборки: CMake и Make"]
+    ISPRO --> Env["3. Окружение и CLI: Bash и Linux"]
+    ISPRO --> CI["4. CI/CD и контейнеры: Docker"]
 ```
 
 ---
@@ -35,13 +29,9 @@ graph TD
 Отчёт формируется в **PDF** и содержит строго два блока:
 
 ```mermaid
-flowchart TD
-    Report["Структура отчёта по лабораторной работе"] --> Part1["1. Титульный лист<br/>- Министерство / ИТМО<br/>- Дисциплина и тема<br/>- Выполнил (ФИО, группа, ISU)<br/>- Проверил (преподаватель)<br/>- Город и год"]
-    Report --> Part2["2. Ход работы<br/>- Нумерация строго по пунктам ТЗ<br/>- Терминальные команды<br/>- Скриншоты выполнения<br/>- Без лишней 'воды' и псевдо-выводов"]
-    
-    style Report fill:#f5f5f5,stroke:#333
-    style Part1 fill:#e8f5e9,stroke:#4caf50
-    style Part2 fill:#e1f5fe,stroke:#0288d1
+graph TD
+    Report["Структура отчёта по лабе"] --> Part1["1. Титульный лист (Вуз, Тема, ФИО, ISU, Преподаватель)"]
+    Report --> Part2["2. Ход работы (Нумерация по ТЗ, Команды, Скриншоты)"]
 ```
 
 > [!IMPORTANT]
@@ -52,20 +42,13 @@ flowchart TD
 ## 4. Рабочий процесс Git (Git Workflow)
 
 ```mermaid
-gitGraph
-    commit id: "Initial commit"
-    branch develop
-    checkout develop
-    commit id: "Setup project structure"
-    branch feature/lab1
-    checkout feature/lab1
-    commit id: "Implement Task 1"
-    commit id: "Implement Task 2"
-    commit id: "Add tests"
-    checkout develop
-    merge feature/lab1 id: "PR: Lab 1 finished"
-    checkout main
-    merge develop id: "Release 1.0"
+graph LR
+    Main1["main (Старт)"] --> Dev1["develop (Подготовка)"]
+    Dev1 --> Feat1["feature/lab1 (Задание 1)"]
+    Feat1 --> Feat2["feature/lab1 (Задание 2)"]
+    Feat2 --> PR["Pull Request и Review"]
+    PR --> Dev2["develop (Слияние)"]
+    Dev2 --> Main2["main (Сдача)"]
 ```
 
 ---
