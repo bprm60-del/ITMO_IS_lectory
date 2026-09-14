@@ -1,0 +1,17 @@
+# Ignore homework files (ДЗ)
+*[Дд][Зз]*
+*[Dd][Zz]*
+*[Hh][Ww]*
+*[Hh]omework*
+*[Дд]омашн*
+
+# Ignore ISPRO (ИСПРО) - contains personal labs
+ИСПРО/
+[Ии][Сс][Пп][Рр][Оо]/
+
+# OS / temporary files
+*.tmp
+~$*
+desktop.ini
+thumbs.db
+.DS_Store
