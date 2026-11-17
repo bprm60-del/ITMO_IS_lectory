@@ -21,7 +21,15 @@ thumbs.db
 *.pdf
 __pycache__/
 *.pyc
+# LaTeX files and artifacts
+*.tex
 *.aux
 *.log
 *.toc
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex*
+*.bbl
+*.blg
 
