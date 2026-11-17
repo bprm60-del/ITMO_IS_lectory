@@ -19,3 +19,9 @@ desktop.ini
 thumbs.db
 .DS_Store
 *.pdf
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.toc
+
