@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Логика высказываний (Лекция 1)}{1}{}%
+\contentsline {section}{\numberline {2}Предикаты и кванторы (Лекция 2)}{3}{}%
+\contentsline {section}{\numberline {3}Методы математических доказательств (Лекция 3)}{4}{}%
+\contentsline {section}{\numberline {4}Логика множеств и наивная теория множеств (Лекция 4)}{5}{}%
+\contentsline {section}{\numberline {5}Бинарные отношения и эквивалентность (Лекция 5)}{6}{}%
+\contentsline {section}{\numberline {6}Отношения порядка, ЧУМ и решётки (Лекция 6)}{8}{}%
+\contentsline {section}{\numberline {7}Функции, отображения и асимптотический анализ (Лекция 7)}{9}{}%
+\contentsline {section}{\numberline {8}Мощность множеств, счётность и континуум (Лекция 8)}{10}{}%
+\contentsline {section}{\numberline {9}Вполне упорядоченные множества, ординалы и аксиоматика ZFC (Лекция 9)}{11}{}%
+\contentsline {section}{\numberline {10}Язык и истина: синтаксис, семантика и компактность (Лекция 10)}{12}{}%
+\contentsline {section}{\numberline {11}Натуральная дедукция и теория доказательств (Лекция 11)}{13}{}%
+\contentsline {section}{\numberline {12}Логика первого порядка / First-Order Logic (Лекция 11 репозитория)}{14}{}%
