@@ -1,12 +1,15 @@
-# Ignore homework files (ДЗ)
-*[Дд][Зз][ ._0-9-]*
-*[Dd][Zz][ ._0-9-]*
-*[Hh][Ww][ ._0-9-]*
-*[Hh]omework*
-*[Дд]омашн*
-# Также проверяем окончания имени перед точкой или концом строки
-*[Дд][Зз].*
-*[Дд][Зз]
+# Scans, images, and raw attachments of homework (не добавляются в репозиторий)
+*[Дд][Зз]*.jpg
+*[Дд][Зз]*.jpeg
+*[Дд][Зз]*.png
+*[Дд][Зз]*.jfif
+*[Dd][Zz]*.jpg
+*[Dd][Zz]*.jpeg
+*[Dd][Zz]*.png
+*[Hh][Ww]*.jpg
+*[Hh][Ww]*.jpeg
+*[Hh][Ww]*.png
+*.pdf
 
 # Ignore ISPRO (ИСПРО) - contains personal labs
 ИСПРО/
@@ -18,9 +21,9 @@
 desktop.ini
 thumbs.db
 .DS_Store
-*.pdf
 __pycache__/
 *.pyc
+
 # LaTeX files and artifacts
 *.tex
 *.aux
@@ -32,4 +35,3 @@ __pycache__/
 *.synctex*
 *.bbl
 *.blg
-
